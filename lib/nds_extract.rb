@@ -64,7 +64,6 @@ def gross_per_studio(collection)
 end
 
 def movies_with_directors_set(source)
-  #for each movie by each director add the :title and :director_name
 
   array_of_movies_by_director = []
   out_i = 0
@@ -87,49 +86,6 @@ def movies_with_directors_set(source)
 
   array_of_movies_by_director
 end
-
-# def movies_with_directors_set(source)
-# #   # GOAL: For each director, find their :movies Array and stick it in a new Array
-  
-# #   # INPUT:
-# #   # * source: An Array of Hashes containing director information including
-# #   # :name and :movies
-  
-# #   # RETURN:
-  
-# #   # Array of Arrays containing all of a director's movies. Each movie will need
-# #   # to have a :director_name key added to it.
-
-# #   # expect restult .to_eq [[{:title => "test", :director_name => "By Poodle"}], [{}]]
-
-#   movies_by_each_director = []
-
-#   outter_i = 0
-#   while source[outter_i] do 
-#     # directors_movies = []
-#     # director = source[outter_i][:name]
-#     movies_array = source[outter_i][:movies]
-#     director = source[outter_i][:name]
-#     # movies_by_each_director << movie_with_director_name(director, source[outter_i][:movies])
-
-#     inner_i = 0
-#     while movies_array[inner_i] do
-
-#       movies_by_each_director << movie_with_director_name(director, source[outter_i][:movies][inner_i])
-#       # new_hash = {}
-#       # new_hash[:title] = movies_array[inner_i][:title]
-#       # new_hash[:director_name] = director
-#       # directors_movies << new_hash
-      
-#       inner_i += 1
-#     end
-  
-#     # movies_by_each_director << directors_movies
-#     outter_i += 1
-#   end
-  
-#   movies_by_each_director
-# end
 
 # ----------------    End of Your Code Region --------------------
 # Don't edit the following code! Make the methods above work with this method
